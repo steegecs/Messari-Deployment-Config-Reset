@@ -2068,6 +2068,7 @@ module.exports = require("util");
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
+const fs = __nccwpck_require__(147)
 const core = __nccwpck_require__(186)
 
 const ABSOLUTE_PATH = core.getInput('ABSOLUTE_PATH')
