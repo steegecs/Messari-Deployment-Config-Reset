@@ -1,0 +1,12 @@
+name: "Messari Deployment Config Reset"
+description: "This action is used to reset the configurations.json after a merge into the Messari repository"
+author: "Chris Steege"
+
+inputs:
+  ABSOLUTE_PATH:
+    description: "Returns the absolute path to the head of the repository running the action"
+    required: true
+  
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

@@ -1,0 +1,24 @@
+{
+  "name": "messari-deployment-config-reset",
+  "version": "1.0.0",
+  "description": "This action is used to reset the configurations.json after a merge into the Messari repository",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steegecs/Messari-Deployment-Config-Reset.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steegecs/Messari-Deployment-Config-Reset/issues"
+  },
+  "homepage": "https://github.com/steegecs/Messari-Deployment-Config-Reset#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "@vercel/ncc": "^0.33.4"
+  }
+}
