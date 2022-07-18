@@ -2074,9 +2074,7 @@ const core = __nccwpck_require__(186)
 const ABSOLUTE_PATH = core.getInput('ABSOLUTE_PATH')
 
 const DEPLOYMENT_CONFIGURATIONS_JSON = require(ABSOLUTE_PATH + "/deployment/deployment.json");
-const DEPLOYMENT_CONFIGURATIONS = JSON.parse(JSON.stringify(DEPLOYMENT_CONFIGURATIONS_JSON))[
-    "subgraphs"
-  ];
+const DEPLOYMENT_CONFIGURATIONS = JSON.parse(JSON.stringify(DEPLOYMENT_CONFIGURATIONS_JSON));
 
 async function deploySubgraphs(ABSOLUTE_PATH) {
     for (subgraph in DEPLOYMENT_CONFIGURATIONS["subgraphs"]) {
