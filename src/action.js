@@ -14,17 +14,12 @@ async function deploySubgraphs(ABSOLUTE_PATH) {
             for (network in DEPLOYMENT_CONFIGURATIONS["subgraphs"][subgraph][
                 protocol
             ]) {
+                console.log("HI")
                 if (
                 "deploy-on-merge" in
                 DEPLOYMENT_CONFIGURATIONS["subgraphs"][subgraph][protocol][network]
                 ) {
-                console.log(
-                    protocol +
-                    " " +
-                    DEPLOYMENT_CONFIGURATIONS["subgraphs"][subgraph][protocol][
-                        network
-                    ]["deploy-on-merge"]
-                );
+                console.log("HELLO")
                 DEPLOYMENT_CONFIGURATIONS["subgraphs"][subgraph][protocol][network][
                     "deploy-on-merge"
                 ] = false;
