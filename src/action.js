@@ -28,7 +28,7 @@ async function deploySubgraphs(ABSOLUTE_PATH) {
     
     fs.writeFile(
         ABSOLUTE_PATH + "/deployment/deployment.json",
-        JSON.stringify(DEPLOYMENT_CONFIGURATIONS),
+        JSON.stringify(DEPLOYMENT_CONFIGURATIONS, null, "\t"),
         (err) => {
         if (err) {
             throw err;
