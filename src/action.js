@@ -3,7 +3,7 @@ const core = require('@actions/core')
 const github = require('@actions/github')
 
 
-console.log(github.context.payload.push)
+console.log(github.context.payload)
 const ABSOLUTE_PATH = core.getInput('ABSOLUTE_PATH')
 
 // const DEPLOYMENT_CONFIGURATIONS_JSON = require(ABSOLUTE_PATH + "/deployment/deployment.json");
