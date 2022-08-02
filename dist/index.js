@@ -8865,7 +8865,7 @@ const core = __nccwpck_require__(2186)
 const github = __nccwpck_require__(5438)
 
 
-console.log(github.context.payload)
+console.log(github.context.payload.before)
 const ABSOLUTE_PATH = core.getInput('ABSOLUTE_PATH')
 
 // const DEPLOYMENT_CONFIGURATIONS_JSON = require(ABSOLUTE_PATH + "/deployment/deployment.json");
